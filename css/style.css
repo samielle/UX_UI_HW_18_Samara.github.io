@@ -16,7 +16,7 @@
 
 .gridChild {
     width: auto;
-    margin: 1rem;
+    margin-top: 1rem;
     padding: 1rem;
     text-align: center;
     
@@ -35,21 +35,31 @@
 }
 
 .skillsGrid {
-    display: grid;
-    grid-template-areas: 
+    display: inline-grid;
+    grid-template-columns: 
     'Child1 Child2 Child3';
+    gap: 1rem;
+}
+
+.MyWork {
     width: 530px;
+    margin: auto;
+
+}
+
+.MySkills {
+    width: 530px;
+    margin: auto;
+    
 }
 
 .flexContainer {
     display: flex;
     flex-direction: column;
-    width: 530px;
     margin-top: 1rem;
 }
 
 .flexChild {
-    width: 33%;
     margin-bottom: 2rem;
 }
 
