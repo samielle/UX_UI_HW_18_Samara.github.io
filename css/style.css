@@ -61,12 +61,8 @@
 }
 
 .flexChild {
-<<<<<<< Updated upstream
-    margin-bottom: 2rem;
-=======
     margin: 0;
     padding: 0;
->>>>>>> Stashed changes
 }
 
 .inline-block {
