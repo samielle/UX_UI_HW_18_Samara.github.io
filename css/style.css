@@ -1,5 +1,17 @@
-h3 {
+.projects {
     text-align: center;
+}
+
+.UXHeaders {
+    font-size: large;
+}
+
+.UXP {
+    font-size: smaller;
+}
+
+.WorkIcon {
+    width: 530px;
 }
 
 .gridChild {
@@ -26,19 +38,19 @@ h3 {
     display: grid;
     grid-template-areas: 
     'Child1 Child2 Child3';
-    margin-top: 1rem;
+    width: 530px;
 }
 
 .flexContainer {
     display: flex;
     flex-direction: column;
+    width: 530px;
     margin-top: 1rem;
 }
 
 .flexChild {
     width: 33%;
-    margin: 1rem;
-    padding: 1rem;
+    margin-bottom: 2rem;
 }
 
 .inline-block {
@@ -100,6 +112,7 @@ section {
     min-height: min-content;
     margin:auto;
     padding: 25px;
+    margin-top: 3rem;
 }
 
 .heroImg {
@@ -113,7 +126,7 @@ section {
 }
 
 .content {
-    width: 500px;
+    width: 530px;
     margin: 0 auto;
 }
 
