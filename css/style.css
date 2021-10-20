@@ -15,8 +15,23 @@
     font-size: smaller;
 }
 
+.croppedIcon {
+    margin: 0px 0px 0px 0px;
+}
+
 .WorkIcon {
-    max-width: 500px;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: 0% 0%;
+    overflow: hidden;
+}
+
+.WorkIconGif { 
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    overflow: hidden;
 }
 
 .gridChild {
@@ -34,51 +49,67 @@
     'Child1' 
     'Child2' 
     'Child3';
-    margin-bottom: 1rem;
 }
 
 .gridChild1 {
     grid-area: Child1;
+    margin-bottom: 1rem;
 }
 
 .gridChild2 {
     grid-area: Child2;
+    margin-bottom: 1rem;
 }
 
 .gridChild3 {
     grid-area: Child3;
+    margin-bottom: 1rem;
 }
 
 .MyWork {
-    max-width: 500px;
     margin: auto;
+    width: 50%;
+    height: 50%;
 
 }
 
 .MySkills {
-    max-width: 500px;
     margin: auto;
     min-height: fit-content;
+    width: 50%;
+    height: 50%;
     
 }
 
 .skillsFlex {
-    display: inline-flex;
-    flex-wrap: wrap;
-    gap: 2%;
+    height: 100%;
+    display: flex;
     flex-direction: row;
+    gap: 2%;
     margin-top: 1rem;
     margin-bottom: 2rem;
-    max-width: 500px;
 }
 
 .flexChild {
+    height: 100%;
     margin: 0;
     padding: 0;
     margin-bottom: 2rem;
     width: 31%;
     display: flex;
     flex-direction: column;
+}
+
+.skillsText {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.SkillIcon {
+    height: 100px;
+    width: 100PX;
+
 }
 
 .inline-block {
@@ -139,14 +170,12 @@ header {
 section {
     min-height: min-content;
     margin: auto;
-    padding: 25px;
     margin-top: 3rem;
+    position: relative;
 }
 
 .heroImg {
-    margin: 1vw;
-    height: 30rem;
-    padding: 25px;
+    height: auto;
     margin-bottom: 2rem;
 }
 
@@ -155,7 +184,8 @@ section {
 }
 
 .content {
-    max-width: 500px;
+    width: 50%;
+    height: 50%;
     margin: 0 auto;
 }
 
@@ -184,15 +214,25 @@ footer {
 }
 
 @media only screen and (max-width:600px) {
-    .flexContainer {
+    .skillsFlex {
+        height: 100%;
         display: flex;
         flex-direction: column;
     }
     .flexChild {
-        width: auto;
+        height: 100%;
         display: flex;
         flex-direction: row;
+        align-items: center;
+        column-gap: 30px;
     }
+    .skillsText {
+        height: 100%;
+        min-width: 30vw;
+        display: flex;
+        flex-direction: column;
+    }
+
     .skillsGrid {
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-columns: 1fr;
@@ -201,5 +241,19 @@ footer {
         "Child2"
         "Child3"
         ;
+    }
+    .WorkIcon {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        object-position: 0% 0%;
+        overflow: hidden;
+    }
+    
+    .WorkIconGif { 
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        overflow: hidden;
     }
 }
